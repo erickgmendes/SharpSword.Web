@@ -16,6 +16,7 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { SheetsComponent } from '../../sheets/sheets.component';
 
 import { NavbarModule } from '../../shared/navbar/navbar.module';
 import { FooterModule } from '../../shared/footer/footer.module';
@@ -41,7 +42,8 @@ import { SidebarModule } from '../../sidebar/sidebar.module';
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
-    UpgradeComponent
+    UpgradeComponent,
+    SheetsComponent
   ]
 })
 
