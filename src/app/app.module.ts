@@ -9,7 +9,7 @@ import { NavbarModule } from './components/shared/navbar/navbar.module';
 import { FooterModule } from './components/shared/footer/footer.module';
 import { SidebarModule } from './components/sidebar/sidebar.module';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app/app.component';
 
 import { AdminLayoutComponent } from './components/layouts/admin-layout/admin-layout.component';
 
