@@ -15,11 +15,19 @@
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor="let row of tableData.dataRows">
+                <tr *ngFor="let row of filteredDataRows">
                   <td *ngFor="let cell of row">{{ cell }}</td>
                 </tr>
               </tbody>
             </table>
+            <mat-paginator
+              [length]="length"
+              [pageSize]="pageSize"
+              [pageSizeOptions]="pageSizeOptions"
+              (page)="handlePageEvent($event)"
+              aria-label="Select page"
+            >
+            </mat-paginator>            
           </div>
         </div>
       </div>

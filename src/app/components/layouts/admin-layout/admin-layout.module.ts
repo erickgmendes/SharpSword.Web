@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 
 import { LbdModule } from '../../lbd/lbd.module';
 import { NguiMapModule} from '@ngui/map';
@@ -29,6 +31,8 @@ import { SidebarModule } from '../../sidebar/sidebar.module';
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
     LbdModule,
+    MatTableModule,
+    MatPaginatorModule,
     NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=YOUR_KEY_HERE'}),
     NavbarModule,
     FooterModule,
