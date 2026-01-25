@@ -1,0 +1,32 @@
+.dialog-container {
+  min-width: 300px;
+  max-width: 500px;
+}
+
+mat-dialog-content {
+  padding: 16px;
+  
+  p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+mat-dialog-actions {
+  padding: 16px;
+  gap: 8px;
+  
+  button {
+    min-width: 80px;
+  }
+  
+  .confirm-btn {
+    background-color: #f44336 !important; /* Red color for warning */
+    color: white !important;
+  }
+  
+  .cancel-btn {
+    color: #757575;
+  }
+}

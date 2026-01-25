@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Center Material dialogs opened with panelClass 'center-dialog' */
+.cdk-overlay-pane.center-dialog {
+	-webkit-transform: translate(-50%, -50%) !important;
+	-ms-transform: translate(-50%, -50%) !important;
+	transform: translate(-50%, -50%) !important;
+}

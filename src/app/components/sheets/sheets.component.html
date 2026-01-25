@@ -11,12 +11,33 @@
             <table class="table table-hover table-striped">
               <thead>
                 <tr>
-                  <th *ngFor="let cell of tableData.headerRow">{{ cell }}</th>
+                  <th>ID</th>
+                  <th>Nome</th>
+                  <th>Sistema</th>
+                  <th>Ações</th>
                 </tr>
               </thead>
               <tbody>
                 <tr *ngFor="let row of filteredDataRows">
-                  <td *ngFor="let cell of row">{{ cell }}</td>
+                  <td>{{ row.id }}</td>
+                  <td>{{ row.nome }}</td>
+                  <td>{{ row.sistema }}</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-simple btn-xs"
+                      (click)="editItem(row)"
+                      title="Editar">
+                      <i class="fa fa-edit"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-simple btn-xs"
+                      (click)="deleteItem(row)"
+                      title="Excluir">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -27,7 +48,7 @@
               (page)="handlePageEvent($event)"
               aria-label="Select page"
             >
-            </mat-paginator>            
+            </mat-paginator>
           </div>
         </div>
       </div>
