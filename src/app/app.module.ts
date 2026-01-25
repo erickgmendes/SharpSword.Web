@@ -4,10 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 import { AppRoutingModule } from './app.routing';
 import { NavbarModule } from './components/shared/navbar/navbar.module';
 import { FooterModule } from './components/shared/footer/footer.module';
 import { SidebarModule } from './components/sidebar/sidebar.module';
+import { LbdModule } from './components/lbd/lbd.module';
 
 import { AppComponent } from './components/app/app.component';
 
@@ -19,6 +22,8 @@ import { AdminLayoutComponent } from './components/layouts/admin-layout/admin-la
     FormsModule,
     RouterModule,
     HttpClientModule,
+    MatPaginatorModule,
+    LbdModule,
     NavbarModule,
     FooterModule,
     SidebarModule,

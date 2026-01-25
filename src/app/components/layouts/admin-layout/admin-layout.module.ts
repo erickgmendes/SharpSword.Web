@@ -6,7 +6,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 
 import { LbdModule } from '../../lbd/lbd.module';
-import { NguiMapModule} from '@ngui/map';
 
 import { AdminLayoutRoutes } from './admin-layout.routing';
 
@@ -33,7 +32,6 @@ import { SidebarModule } from '../../sidebar/sidebar.module';
     LbdModule,
     MatTableModule,
     MatPaginatorModule,
-    NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=YOUR_KEY_HERE'}),
     NavbarModule,
     FooterModule,
     SidebarModule
