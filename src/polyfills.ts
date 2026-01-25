@@ -1,6 +1,6 @@
 // This file includes polyfills needed by Angular and is loaded before the app.
 // You can add your own extra polyfills to this file.
-import 'zone.js/dist/zone';
+import 'zone.js';
 
 // If you need to support the browsers/features below, uncomment the import
 // and run `npm install import-name-here';
