@@ -1,7 +1,7 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -16,24 +16,17 @@ import { AppComponent } from './components/app/app.component';
 
 import { AdminLayoutComponent } from './components/layouts/admin-layout/admin-layout.component';
 
-@NgModule({
-  imports: [
-    BrowserAnimationsModule,
-    FormsModule,
-    RouterModule,
-    HttpClientModule,
-    MatPaginatorModule,
-    LbdModule,
-    NavbarModule,
-    FooterModule,
-    SidebarModule,
-    AppRoutingModule
-  ],
-  declarations: [
-    AppComponent,
-    AdminLayoutComponent,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        AdminLayoutComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserAnimationsModule,
+        FormsModule,
+        RouterModule,
+        MatPaginatorModule,
+        LbdModule,
+        NavbarModule,
+        FooterModule,
+        SidebarModule,
+        AppRoutingModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
